@@ -3,12 +3,11 @@ const serverless = require("serverless-http");
 
 const app = express();
 const router = express.Router();
-const axios = require('axios');
 
 router.get("/", (req, res) => {
-    res.json({
-        hello: "hi!"
-      });
+  res.json({
+    hello: "hi!"
+  });
 });
 
 app.use(`/.netlify/functions/api`, router);
