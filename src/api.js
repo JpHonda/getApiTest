@@ -5,11 +5,12 @@ const app = express();
 const router = express.Router();
 const axios = require('axios');
 router.get("/", (req, res) => {
-
-
+    
     axios.get('http://webcode.me').then(resp => {
-        resp.data
+        console.log(resp.data);
+        res.send(data)
     });
+    
 
     // axios.get('https://cvp1.moph.go.th/api/ImmunizationTarget?cid=1409900727635&hospital_code=13777',
     //     {
