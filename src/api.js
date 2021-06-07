@@ -27,7 +27,7 @@ router.get("/", (req, res) => {
             console.error(error)
         })
 
-    res.send('5')
+    res.send('6')
 
     // res.json({
     //     hello: "hi!"
