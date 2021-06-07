@@ -21,7 +21,7 @@ router.get("/", (req, res) => {
             }
         })
         .then((res) => {
-            console.log('xxx')
+            res.send('6')
         })
         .catch((error) => {
             console.error(error)
