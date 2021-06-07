@@ -4,11 +4,12 @@ const serverless = require("serverless-http");
 const app = express();
 const router = express.Router();
 const axios = require('axios');
-router.get("/", (req, res) => {
-    
+
+
+router.get("/", (req, res) => {    
     axios.get('http://webcode.me').then(resp => {
         console.log(resp.data);
-        res.send(data)
+        res.send(resp.data)
     });
     
 
