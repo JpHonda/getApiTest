@@ -19,13 +19,13 @@ router.get("/", (req, res) => {
             }
         })
         .then((res) => {
-            res.send('xxx')
+            console.log('xxx')
         })
         .catch((error) => {
             console.error(error)
         })
 
-    res.send('xxx2')
+    res.send('xxx3')
 
     // res.json({
     //     hello: "hi!"
